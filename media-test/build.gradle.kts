@@ -9,6 +9,14 @@ plugins {
     id("dev.icerock.moko.gradle.detekt")
 }
 
+android {
+    namespace = "dev.icerock.moko.media.test"
+
+    defaultConfig {
+        minSdk = 21
+    }
+}
+
 dependencies {
     commonMainApi(projects.media)
 
